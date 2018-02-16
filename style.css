@@ -11,7 +11,7 @@ a {
 	text-decoration: none;
 }
 img {
-	width: 150px;
+	width: 200px;
 }
 p span {
 	font-weight: normal;
@@ -60,6 +60,9 @@ p span {
 	justify-content: center;
 }
 .galleryimage {
+	object-fit: cover;
+	width: 120px;
+	height: 100px;
 }
 .footer {
 	position: absolute;

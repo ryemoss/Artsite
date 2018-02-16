@@ -21,12 +21,12 @@
 
 
 		<script>
-			var folder = "./images/photos";
+			var folder = "./images/photos/";
 			$.ajax({
 			    url : folder,
 			    success: function (data) {
 			        $(data).find("a").attr("href", function (i, val) {
-			            if( val.match(/\.(JPG|png|gif)$/) ) {
+			            if( val.match(/\.(jpg|png|gif)$/) ) {
 			                $("body").append( "<img src='"+ folder + val +"'>" );
 			            }
 			        });

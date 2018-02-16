@@ -11,7 +11,7 @@ a {
 	text-decoration: none;
 }
 img {
-	width: 200px;
+	width: 150px;
 }
 p span {
 	font-weight: normal;
@@ -52,13 +52,14 @@ p span {
 	vertical-align: top;
 }
 .gallery{
-	width: 800px;
+	display: grid;
+	grid-template-columns: auto auto auto;
 	margin-left: auto;
 	margin-right: auto;
+	grid-gap: 10px;
+	justify-content: center;
 }
 .galleryimage {
-	display: inline-block;
-	margin: 10px;
 }
 .footer {
 	position: absolute;

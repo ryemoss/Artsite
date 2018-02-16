@@ -19,6 +19,21 @@
 			</div>
 		</div>
 
+
+		<script>
+			var folder = "./images/photos";
+			$.ajax({
+			    url : folder,
+			    success: function (data) {
+			        $(data).find("a").attr("href", function (i, val) {
+			            if( val.match(/\.(JPG|png|gif)$/) ) {
+			                $("body").append( "<img src='"+ folder + val +"'>" );
+			            }
+			        });
+			    }
+			});
+		</script>
+
 		<div class="footer">© 2018 RYAN MOSER ALL RIGHTS RESERVED</div>
 
 	</body>

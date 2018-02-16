@@ -17,14 +17,26 @@
 			<div class="navbutton">
 				<a href="dloads.html">Digital</a>
 			</div>
-			<p></p>
 		</div>
 
-
+		<script type="text/javascript">
+			var folder = "./images/photos";
+			$.ajax({
+			    url : folder,
+			    success: function (data) {
+			        $(data).find("a").attr("href", function (i, val) {
+			            if( val.match(/\.(jpg|png|gif)$/) ) {
+			                $("body").append( "<img src='"+ folder + val +"'>" );
+											$("body").append( "<img src= ./images/aboutimage.jpg>" );
+			            }
+			        });
+						}
+					});
+			</script>
 
 			<script type="text/javascript">
 				$(document).ready(function(){
-						$("body").append("Hello World!");
+						$("p").text("Hello World!");
 					});
 			</script>
 

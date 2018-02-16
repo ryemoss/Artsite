@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title> Instrument Eval </title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
-	</head>
+	  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<body>
 		<div class="header">Instrument Evaluation</div>
 		<div class="pages">
@@ -19,7 +19,6 @@
 			</div>
 		</div>
 
-
 		<script>
 			var folder = "./images/photos/";
 			$.ajax({
@@ -28,6 +27,7 @@
 			        $(data).find("a").attr("href", function (i, val) {
 			            if( val.match(/\.(jpg|png|gif)$/) ) {
 			                $("body").append( "<img src='"+ folder + val +"'>" );
+											$("body").append( "<img src= ./images/aboutimage.jpg>" );
 			            }
 			        });
 			    }

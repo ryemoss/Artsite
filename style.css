@@ -51,6 +51,15 @@ p span {
 	font-size: 12px;
 	vertical-align: top;
 }
+.gallery{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.galleryimage {
+	display: inline-block;
+	margin: 10px;
+}
 .footer {
 	position: absolute;
 	font-size: 8px;

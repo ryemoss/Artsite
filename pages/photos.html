@@ -17,21 +17,35 @@
 			<div class="navbutton">
 				<a href="dloads.html">Digital</a>
 			</div>
+
+			<div class="gallery">
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+				<div class="galleryimage">
+					<img src="../images/photos/twXSJT5.jpg" alt="Welcome!">
+				</div>
+			</div>
+
 		</div>
 
 		<script type="text/javascript">
-			var folder = "../images/photos/";
-			$.ajax({
-			    url : folder,
-			    success: function (data) {
-			        $(data).find("a").attr("href", function (i, val) {
-			            if( val.match(/\.(jpg|png|gif)$/) ) {
-			                $("body").append( "<img src='"+ folder + val +"'>" );
-											$("body").append( "<img src= ./images/aboutimage.jpg>" );
-			            }
-			        });
-						}
-					});
+			for (var i =0;)
 			</script>
 
 			<script type="text/javascript">

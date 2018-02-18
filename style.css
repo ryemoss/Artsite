@@ -1,6 +1,6 @@
 html,
 body {
-	font-family: Arial;
+	font-family: "Palatino";
 	color: gray;
 	margin: 0;
 	padding: 0;
@@ -31,6 +31,9 @@ p span {
 	padding-right: 20px;
 	margin: 5px;
 	display: inline-block;
+}
+.navbutton:hover{
+	color: forestgreen;
 }
 .icons{
 	display: block;
@@ -80,9 +83,9 @@ p span {
 	max-width: 260px;
 }
 .footer {
-	position: absolute;
 	font-size: 8px;
-	bottom: 0px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 	width: 100%
 }

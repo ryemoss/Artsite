@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>RYEMOSS</title>
+		<title>Ryemoss</title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -27,7 +27,7 @@
 		</div>
 
 			<div class="gallery">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img id="pic1" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
 				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
 				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
 				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
@@ -43,6 +43,9 @@
 			function fadeIn(obj) {
 				console.log("faded");
 				$(obj).fadeIn(1000);
+			}
+			$(document).ready(function(){
+				$("pic1").fadeIn(1000);
 			}
 		</script>
 

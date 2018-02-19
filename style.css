@@ -81,6 +81,7 @@ p span {
 	width: auto;
 	height: 200px;
 	max-width: 260px;
+	display: none;
 }
 .footer {
 	font-size: 9px;

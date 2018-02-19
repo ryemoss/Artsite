@@ -28,25 +28,24 @@
 
 			<div class="gallery">
 				<img id="pic1" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
-				<img onload="fadeIn(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
+				<img onload="fader(this)" src="../images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!">
 			</div>
 
 		<div class="footer">© 2018 RYAN MOSER ALL RIGHTS RESERVED</div>
 
 		<script>
-			function fadeIn(obj) {
-				console.log("faded");
+			function fader(obj) {
 				$(obj).fadeIn(1000);
 			}
 			$(document).ready(function(){
 				$("pic1").fadeIn(1000);
-			}
+			});
 		</script>
 
 	</body>

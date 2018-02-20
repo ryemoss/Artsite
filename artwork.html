@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ryemoss</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	</head>
+	<body>
+		<img src="images/homeimage.png" class="header"><img>
+		<div class="pages">
+			<div class="navbutton">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="navbutton">
+				<a href="photos.html">Photos</a>
+			</div>
+			<div class="navbutton">
+				<a href="artwork.html" style="color:black">Artwork</a>
+			</div>
+		</div>
+		<div class="icons">
+			<div class="socialicon"><a href="https://www.instagram.com/rye_moss/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+			<div class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a></div>
+			<div class="socialicon"><a href="mailto:rmosyr@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></div>
+		</div>
+
+		<div class="imagecycler">
+			<img src="images/photos/twXSJT5.jpg" class="cycleimage" onclick="cycle(this)"><img>
+			<div class="miniimages">
+				<img src="images/photos/image2.jpg" class="miniimage" id="mini1" style="opacity:.9"</div>
+				<img src="images/photos/image3.jpg" class="miniimage" id="mini2" style="opacity:.5"</div>
+				<img src="images/photos/image4.jpg" class="miniimage" id="mini3" style="opacity:.1"</div>
+			</div>
+		</div>
+
+		<div class="footer">© 2018 RYAN MOSER ALL RIGHTS RESERVED</div>
+
+		<script>
+			var img = [];
+			img[0] = "images/photos/twXSJT5.jpg";
+			img[1] = "images/photos/image2.jpg";
+			img[2] = "images/photos/image3.jpg";
+			img[3] = "images/photos/image4.jpg";
+
+			var index = 0;
+			function cycle(obj){
+				index++;
+				if (index >= img.length)
+					index = 0;
+
+				var temp = img[0];
+				for(var i=0; i<img.length-1;i++)
+					img[i] = img[i+1];
+				img[img.length-1] = temp;
+
+				obj.src=img[0];
+				mini1.src=img[1];
+				mini2.src=img[2];
+				mini3.src=img[3];
+			}
+
+		</script>
+
+	</body>
+</html>

@@ -90,3 +90,17 @@ p span {
 	text-align: center;
 	width: 100%
 }
+.imagecycler{
+	text-align: center;
+}
+.cycleimage{
+	width: 800px;
+}
+.miniimages{
+	display: inline-block;
+	vertical-align: top;
+}
+.miniimage{
+	display: block;
+	width: 100px;
+}

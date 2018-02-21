@@ -83,6 +83,19 @@ p span {
 	max-width: 260px;
 	display: none;
 }
+.imagefilters{
+		margin-right: 50px;
+		margin-left: 50px;
+		float: none;
+}
+.imagefilter{
+	display: block;
+	font-size: 12px;
+	outline: none;
+	border: none;
+	background: none;
+}
+
 .footer {
 	font-size: 9px;
 	margin-top: 50px;

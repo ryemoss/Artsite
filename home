@@ -10,19 +10,19 @@
 		<img src="images/homeimage.png" class="header"><img>
 		<div class="pages">
 			<div class="navbutton">
-				<a href="index.html" style="color:black">Home</a>
+				<a href="home" style="color:black">Home</a>
 			</div>
 			<div class="navbutton">
-				<a href="photos.html">Photos</a>
+				<a href="photos">Photos</a>
 			</div>
 			<div class="navbutton">
-				<a href="artwork.html">Artwork</a>
+				<a href="artwork">Artwork</a>
 			</div>
 		</div>
 		<div class="icons">
 			<div class="socialicon"><a href="https://www.instagram.com/rye_moss/" target="_blank"><i class="fab fa-instagram"></i></a></div>
 			<div class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a></div>
-			<div class="socialicon"><a href="mailto:rmosyr@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></div>
+			<div class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a></div>
 		</div>
 
 		<div class="aboutblock">

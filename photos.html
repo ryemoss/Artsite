@@ -27,14 +27,14 @@
 		</div>
 
 		<div class="gallery" id="gallery">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" data-cat="landscape">
 		</div>
 
 		<div id="myModal" class="modal">
@@ -46,7 +46,9 @@
 
 		<script>
 			function fader(obj) {
-				$(obj).fadeIn(1000);
+				$(document).ready(function () {
+					$(obj).fadeIn(1000);
+				});
 			}
 
 			var parent = document.getElementById("gallery");

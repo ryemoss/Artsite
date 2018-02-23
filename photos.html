@@ -27,14 +27,19 @@
 		</div>
 
 		<div class="gallery" id="gallery">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
-			<img onload="fader(this)" src="images/photos/twXSJT5.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" alt="Welcome!" data-cat="beast">
+			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" alt="Welcome!" data-cat="landscape">
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">
 		</div>
 
 		<div class="footer">© 2018 RYAN MOSER ALL RIGHTS RESERVED</div>
@@ -54,6 +59,27 @@
 						children[i].style.display = 'none';
 				}
 			}
+
+			var modal = document.getElementById('myModal');
+			var modalImg = document.getElementById("img01");
+			function modaling(isolate){
+				var mimg = isolate;
+				modal.style.display = "block";
+				modalImg.src = mimg.src;
+			}
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+				closemodal();
+			}
+			function closemodal()	{
+				modal.style.display = "none";
+			}
+			document.addEventListener('keydown', function(e) {
+		    if (e.keyCode == 27) {
+					closemodal();
+ 				}
+				});
 		</script>
 
 	</body>

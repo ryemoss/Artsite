@@ -26,6 +26,14 @@
 			<div class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a></div>
 		</div>
 
+		<script>
+		function fader(obj) {
+			$(document).ready(function () {
+				$(obj).fadeIn(1000);
+			});
+		}
+		</script>
+
 		<div class="gallery" id="gallery">
 			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image1.jpg" class="galleryimage" data-cat="landscape">
 			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" data-cat="landscape">
@@ -45,11 +53,7 @@
 		<div class="footer">© 2018 RYAN MOSER ALL RIGHTS RESERVED</div>
 
 		<script>
-			function fader(obj) {
-				$(document).ready(function () {
-					$(obj).fadeIn(1000);
-				});
-			}
+
 
 			var parent = document.getElementById("gallery");
 			var children = parent.getElementsByTagName("img");

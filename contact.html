@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ryemoss</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	</head>
+	<body>
+		<script>
+		function myLoad(){
+			var elem = document.getElementById("icon1");
+			var elem2 = document.getElementById("icon2");
+			var elem3 = document.getElementById("icon3");
+			var id = setInterval(lerp, 8);
+			var pos = 0;
+			var end = 40;
+			function lerp(){
+				if (pos >= end-.9)
+				{
+					clearInterval(id);
+					slidein(document.getElementById("icot1"));
+					slidein(document.getElementById("icot2"));
+					slidein(document.getElementById("icot3"));
+				}
+				pos += (end-pos)*.03;
+				elem.style.display = 'block';
+				elem2.style.display = 'block';
+				elem3.style.display = 'block';
+				elem.style.margin = pos + 'px';
+				elem2.style.margin = pos + 'px';
+				elem3.style.margin = pos + 'px';
+			}
+		}
+
+		function slidein(objt){
+			var pos = 0;
+			var opa = 0;
+			objt.style.display = "inline";
+			setInterval(slide, 20);
+			function slide(){
+				if (pos >= 20)
+					clearInterval(slide());
+				pos += .5;
+				opa += .025;
+				objt.style.marginLeft = pos + "px";
+				objt.style.opacity = opa;
+			}
+		}
+		</script>
+
+		<img src="images/homeimage.png" onload="myLoad()" class="header"><img>
+		<div class="pages">
+			<div class="navbutton">
+				<a href="index.html" style="color:black">Home</a>
+			</div>
+			<div class="navbutton">
+				<a href="photos.html">Photos</a>
+			</div>
+			<div class="navbutton">
+				<a href="artwork.html">Artwork</a>
+			</div>
+			<div class="navbutton">
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+		<div class="icons" >
+			<div id="icon1" class="socialicon"><a href="https://www.instagram.com/rye_moss/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<span id="icot1" class="socialtext"><a href="https://www.instagram.com/rye_moss/" target="_blank">instagram.com/rye_moss</a></span></div>
+			<div id="icon2" class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a>
+				<span id="icot2" class="socialtext"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank">theeldergoose.deviantart.com</a></span></div>
+			<div id = "icon3" class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a>
+				<span id="icot3" class="socialtext"><a href="mailto:images@ryemoss.com" target="_blank">images@ryemoss.com</a></span></div>
+		</div>
+
+	</body>
+</html>

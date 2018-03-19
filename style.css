@@ -91,7 +91,7 @@ p span {
 }
 .galleryimage {
 	object-fit: cover;
-	width: auto;
+	width: 260px;
 	height: 200px;
 	max-width: 260px;
 	display: none;

@@ -171,6 +171,7 @@ p span {
 .cycleimage{
 	max-width: 800px;
 	max-height: 800px;
+	display: none;
 }
 .cycleimage:hover{
 	cursor:pointer;
@@ -179,8 +180,15 @@ p span {
 	display: inline-block;
 	vertical-align: top;
 }
-.miniimage{
+.miniimagec{
 	display: block;
+	object-fit: cover;
+	width: 100px;
+	height: 60px;
+	margin: 5px;
+}
+.miniimage{
+	display: none;
 	object-fit: cover;
 	width: 100px;
 	height: 60px;

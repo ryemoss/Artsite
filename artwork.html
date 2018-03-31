@@ -38,11 +38,17 @@
 		</script>
 
 		<div class="imagecycler">
-			<img id="mainart" class="cycleimage" onclick="cycle()"></img>
+			<img id="mainart" class="cycleimage" onload="fader(this)" onclick="cycle()"></img>
 			<div class="miniimages">
-				<img class="miniimage" id="mini1" style="opacity:.9"></img>
-				<img class="miniimage" id="mini2" style="opacity:.5"></img>
-				<img class="miniimage" id="mini3" style="opacity:.1"></img>
+				<div class="miniimagec">
+					<img class="miniimage" id="mini1" onload="fader(this)" style="opacity:.8"></img>
+				</div>
+				<div class="miniimagec">
+					<img class="miniimage" id="mini2" onload="fader(this)" style="opacity:.45"></img>
+				</div>
+				<div class="miniimagec">
+					<img class="miniimage" id="mini3" onload="fader(this)" style="opacity:.12"></img>
+				</div>
 			</div>
 		</div>
 

@@ -4,7 +4,6 @@ body {
 	color: gray;
 	margin: 0;
 	padding: 0;
-	height: 100%;
 }
 a {
 	color: inherit;
@@ -72,14 +71,6 @@ p span {
 .aboutimage{
 	display: inline-block;
 	width: 400px;
-}
-.abouttext{
-	display: inline-block;
-	text-align: left;
-	width: 150px;
-	margin-left: 10px;
-	font-size: 12px;
-	vertical-align: top;
 }
 .gallery{
 	display: grid;
@@ -199,4 +190,21 @@ p span {
 	position: absolute;
 	font-size: 16px;
 	opacity: 0;
+}
+.abouttext{
+	opacity: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+	font-size: 14px;
+	animation: fadeIn 4s forwards .5s;
+}
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

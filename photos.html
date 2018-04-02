@@ -38,18 +38,18 @@
 		</script>
 
 		<div class="gallery" id="gallery">
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/dragonfly-on-juniper.jpg" class="galleryimage" data-cat="landscape" alt="dragonfly on juniper"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image2.jpg" class="galleryimage" data-cat="landscape"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image3.jpg" class="galleryimage" data-cat="landscape"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image4.jpg" class="galleryimage" data-cat="beast"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/frog-in-mud.jpg" class="galleryimage" data-cat="landscape" alt="frog in mud"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image6.jpg" class="galleryimage" data-cat="beast"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/moss-on-log.jpg" class="galleryimage" data-cat="beast" alt="moss on log"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image8.jpg" class="galleryimage" data-cat="landscape"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/budding-cacao-tree.jpg" class="galleryimage" data-cat="landscape" alt="budding cacao tree"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/image10.jpg" class="galleryimage" data-cat="landscape"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/rowboat-on-calm-bass-lake.jpg" class="galleryimage" data-cat="landscape" alt="rowboat on calm bass lake"></img>
-			<img onclick="modaling(this)" onload="fader(this)" src="images/photos/bass-lake-sunset.jpg" class="galleryimage" data-cat="landscape" alt="bass lake sunset"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/dragonfly-on-juniper.jpg" data-cat="landscape" alt="dragonfly on juniper"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image2.jpg" data-cat="landscape"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image3.jpg" data-cat="landscape"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image4.jpg" data-cat="beast"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/frog-in-mud.jpg" data-cat="landscape" alt="frog in mud"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image6.jpg" data-cat="beast"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/moss-on-log.jpg" data-cat="beast" alt="moss on log"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image8.jpg" data-cat="landscape"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/budding-cacao-tree.jpg" data-cat="landscape" alt="budding cacao tree"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/image10.jpg" data-cat="landscape"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/rowboat-on-calm-bass-lake.jpg" data-cat="landscape" alt="rowboat on calm bass lake"></img>
+			<img class="galleryimage" onload="fader(this)" src="images/photos/bass-lake-sunset.jpg" data-cat="landscape" alt="bass lake sunset"></img>
 		</div>
 
 		<div id="myModal" class="modal">
@@ -73,11 +73,11 @@
 
 			var modal = document.getElementById('myModal');
 			var modalImg = document.getElementById("img01");
-			function modaling(isolate){
-				var mimg = isolate;
+			$(".galleryimage").click(function(){
+				var mimg = $(this).attr('src');
 				modal.style.display = "block";
-				modalImg.src = mimg.src;
-			}
+				modalImg.src = mimg;
+			});
 			var span = document.getElementsByClassName("close")[0];
 
 			span.onclick = function() {

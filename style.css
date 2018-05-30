@@ -36,6 +36,8 @@ p span {
 	padding-right: 20px;
 	margin: 5px;
 	display: inline-block;
+	animation-name: slideup;
+	animation-duration: 1s;
 }
 @media screen and (max-width: 740px){
 	.navbutton a{
@@ -240,4 +242,14 @@ p span {
 	100% {
 		opacity: 1;
 	}
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(10px);
+		opacity: 0;
+  }
+  100% {
+		transform: translateY(0);
+		opacity: 1;
+  }
 }

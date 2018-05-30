@@ -39,10 +39,10 @@
 			var pos = 0;
 			var opa = 0;
 			objt.style.display = "inline";
-			setInterval(slide, 20);
+			var sl = setInterval(slide, 20);
 			function slide(){
 				if (pos >= 20)
-					clearInterval(slide());
+					clearInterval(sl);
 				pos += .5;
 				opa += .025;
 				objt.style.marginLeft = pos + "px";

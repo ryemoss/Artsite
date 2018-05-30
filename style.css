@@ -45,6 +45,14 @@ p span {
 	margin: 5px;
 	display: inline-block;
 }
+@media only screen and (max-width: 740px){
+	.navbutton a{
+		font-size: 2em;
+	}
+	.socialicon a{
+		font-size: 2em;
+	}
+}
 .indextitle{
 	margin-left: auto;
 	margin-right: auto;

@@ -63,6 +63,9 @@ p span {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	body .modal-content{
+		max-width: 96%;
+	}
 }
 .indextitle{
 	margin-left: auto;
@@ -161,7 +164,6 @@ p span {
     margin: auto;
     display: block;
 		width: auto;
-    width: auto;
     max-width: 900px;
 		max-height: 80%;
 }

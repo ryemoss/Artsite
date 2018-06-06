@@ -7,13 +7,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 	<body>
 		<script>
 		function myLoad(){
 			var elem = document.getElementById("icon1");
 			var elem2 = document.getElementById("icon2");
 			var elem3 = document.getElementById("icon3");
+			var elem4 = document.getElementById("icon4");
 			var id = setInterval(lerp, 8);
 			var pos = 0;
 			var end = 40;
@@ -24,14 +26,17 @@
 					slidein(document.getElementById("icot1"));
 					slidein(document.getElementById("icot2"));
 					slidein(document.getElementById("icot3"));
+					slidein(document.getElementById("icot4"));
 				}
 				pos += (end-pos)*.03;
 				elem.style.display = 'block';
 				elem2.style.display = 'block';
 				elem3.style.display = 'block';
+				elem4.style.display = 'block';
 				elem.style.margin = pos + 'px';
 				elem2.style.margin = pos + 'px';
 				elem3.style.margin = pos + 'px';
+				elem4.style.margin = pos + 'px';
 			}
 		}
 
@@ -68,10 +73,12 @@
 		<div class="icons" >
 			<div id="icon1" class="socialicon"><a href="https://www.instagram.com/rye_moss/" target="_blank"><i class="fab fa-instagram"></i></a>
 				<span id="icot1" class="socialtext"><a href="https://www.instagram.com/rye_moss/" target="_blank">instagram.com/rye_moss</a></span></div>
-			<div id="icon2" class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a>
-				<span id="icot2" class="socialtext"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank">theeldergoose.deviantart.com</a></span></div>
-			<div id = "icon3" class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a>
-				<span id="icot3" class="socialtext"><a href="mailto:images@ryemoss.com" target="_blank">images@ryemoss.com</a></span></div>
+			<div id="icon2" class="socialicon"><a href="https://www.behance.net/ryemoss" target="_blank"><i class="fab fa-behance-square"></i></a>
+				<span id="icot2" class="socialtext"><a href="https://www.behance.net/ryemoss" target="_blank">behance.net/ryemoss</a></span></div>
+			<div id="icon3" class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a>
+				<span id="icot3" class="socialtext"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank">theeldergoose.deviantart.com</a></span></div>
+			<div id = "icon4" class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a>
+				<span id="icot4" class="socialtext"><a href="mailto:images@ryemoss.com" target="_blank">images@ryemoss.com</a></span></div>
 		</div>
 		<div class="abouttext">Ryan Moser is a hobby artist and evolving photographer based out of Chicago.
 			His focus is typically on nature, its beasts, and the Earth's bond with man.<br><br>

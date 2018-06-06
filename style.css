@@ -16,8 +16,9 @@ p span {
 	font-weight: normal;
 }
 .pages, .indexpages {
-	display: block;
+	display: flex;
 	text-align: center;
+	justify-content: center;
 }
 .indexpages {
 	color: black;
@@ -41,10 +42,26 @@ p span {
 }
 @media screen and (max-width: 740px){
 	.navbutton a{
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 	.socialicon a{
-		font-size: 2em;
+		font-size: 1.3em;
+	}
+	body .pages, .indexpages{
+		flex-direction: column;
+	}
+	body .titleimg{
+		width: 80%;
+	}
+	body .gallery{
+		grid-template-columns: auto;
+	}
+	body .galleryimage{
+		width: 90%;
+		max-width: 90%;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .indextitle{
@@ -56,7 +73,7 @@ p span {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 16px;
-	margin-top: 120px;
+	margin-top: 40px;
 	text-align: center;
 }
 .titleimg {
@@ -83,7 +100,8 @@ p span {
 	padding: 12px;
 }
 .icons{
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
 }
 .socialicon{
 	display: inline-block;
@@ -111,6 +129,8 @@ p span {
 	margin-left: auto;
 	margin-right: auto;
 	grid-gap: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	justify-content: center;
 }
 .galleryimage {
@@ -123,7 +143,6 @@ p span {
 .galleryimage:hover{
 	cursor:pointer;
 }
-
 /*----------- Modal Content -----------*/
 .modal {
     display: none;
@@ -183,7 +202,6 @@ p span {
 	border: none;
 	background: none;
 }
-
 .footer {
 	font-size: 9px;
 	margin-top: 50px;
@@ -193,6 +211,8 @@ p span {
 }
 .imagecycler{
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .cycleimage{
 	max-width: 800px;

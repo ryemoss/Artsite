@@ -42,7 +42,7 @@ p span {
 }
 @media screen and (max-width: 740px){
 	.navbutton a{
-		font-size: 1.6em;
+		font-size: 1.5em;
 	}
 	.socialicon a{
 		font-size: 1.3em;
@@ -72,6 +72,10 @@ p span {
 	}
 	body .miniimagec{
 		display: inline-block;
+	}
+	body .abouttext{
+		width: 90%;
+		max-width: 400px;
 	}
 }
 .indextitle{

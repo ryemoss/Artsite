@@ -16,17 +16,22 @@
 			var elem2 = document.getElementById("icon2");
 			var elem3 = document.getElementById("icon3");
 			var elem4 = document.getElementById("icon4");
+
 			var id = setInterval(lerp, 8);
+
 			var pos = 0;
 			var end = 40;
 			function lerp(){
 				if (pos >= end-.9)
 				{
 					clearInterval(id);
-					slidein(document.getElementById("icot1"));
-					slidein(document.getElementById("icot2"));
-					slidein(document.getElementById("icot3"));
-					slidein(document.getElementById("icot4"));
+					if (document.documentElement.clientWidth > 760)
+					{
+						slidein(document.getElementById("icot1"));
+						slidein(document.getElementById("icot2"));
+						slidein(document.getElementById("icot3"));
+						slidein(document.getElementById("icot4"));
+					}
 				}
 				pos += (end-pos)*.03;
 				elem.style.display = 'block';

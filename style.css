@@ -66,6 +66,13 @@ p span {
 	body .modal-content{
 		max-width: 96%;
 	}
+	body .cycleimage{
+		max-width: 100%;
+		max-height: 800px;
+	}
+	body .miniimagec{
+		display: inline-block;
+	}
 }
 .indextitle{
 	margin-left: auto;

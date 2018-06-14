@@ -15,7 +15,7 @@
 		</div>
 		<div class="pages">
 			<div class="navbutton">
-				<a href="photos" style="color:black">Photos</a>
+				<a href="photos" style="color:white;" >Photos</a>
 			</div>
 			<div class="navbutton">
 				<a href="artwork">Artwork</a>
@@ -77,6 +77,9 @@
 						children[i].style.display = 'none';
 				}
 			}
+			$('#gallery').find('img').each(function(){
+				console.log($(this).attr('src'));
+			})
 
 			var modal = document.getElementById('myModal');
 			var modalImg = document.getElementById("img01");
@@ -84,14 +87,21 @@
 				var mimg = $(this).attr('src');
 				modal.style.display = "block";
 				modalImg.src = mimg;
+				console.log($('#gallery').index(mimg));
 			});
 			var span = document.getElementsByClassName("close")[0];
 
 			span.onclick = function() {
 				closemodal();
 			}
+			img01.onclick = function() {
+				nextimage();
+			}
 			function closemodal()	{
 				modal.style.display = "none";
+			}
+			function nextimage() {
+				modalImg.src = "images/photos/mossy-wall.jpg";
 			}
 			document.addEventListener('keydown', function(e) {
 		    if (e.keyCode == 27) {

@@ -1,9 +1,10 @@
 html,
 body {
 	font-family: 'Montserrat', sans-serif;
-	color: gray;
+	color: silver;
 	margin: 0;
 	padding: 0;
+	background-color: #111;
 }
 a {
 	color: inherit;
@@ -21,7 +22,7 @@ p span {
 	justify-content: center;
 }
 .indexpages {
-	color: black;
+	color: silver;
 	font-size: 1.3em;
 	margin-top: 60px;
 	margin-bottom: 80px;
@@ -91,6 +92,7 @@ p span {
 	text-align: center;
 }
 .titleimg {
+	filter: invert(1);
 	width: 600px;
 	display: inline-block;
 }
@@ -99,14 +101,15 @@ p span {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+	filter: invert(1);
 }
 .titletext{
 	font-size: 11px;
-	color: dimgray;
+	color: silver;
 	font-weight: 400;
 }
 .navbutton:hover{
-	color: forestgreen;
+	color: #1CAB50;
 }
 .icons, .indexicons{
 	display: block;
@@ -125,7 +128,7 @@ p span {
 	margin-right: 12px;
 }
 .socialicon:hover{
-	color: forestgreen;
+	color: #1CAB50;
 	cursor: pointer;
 }
 .aboutblock{
@@ -228,8 +231,8 @@ p span {
 	margin-bottom: 30px;
 }
 .cycleimage{
-	max-width: 800px;
-	max-height: 800px;
+	max-width: 1000px;
+	max-height: 1000px;
 	display: none;
 }
 .cycleimage:hover{
@@ -264,6 +267,7 @@ p span {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 10px;
 	width: 450px;
 	font-size: 14px;
 	animation: fadeIn 4s forwards .5s;

@@ -155,7 +155,6 @@ p span {
 	width: 260px;
 	height: 200px;
 	max-width: 260px;
-	display: none;
 }
 .galleryimage:hover{
 	cursor:pointer;

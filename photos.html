@@ -8,6 +8,7 @@
 	  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="./node_modules/lazyload/lazyload.js"></script>
 	</head>
 	<body>
 		<div class="title">
@@ -32,8 +33,8 @@
 				$(obj).fadeIn(1000);
 			});
 		}
+		lazyload();
 		</script>
-
 		<div class="gallery" id="gallery">
 			<img class="galleryimage" onload="fader(this)" src="images/photos/green-beetle.jpg" data-cat="landscape" alt="green beetle with orange fanned feet"></img>
 			<img class="galleryimage" onload="fader(this)" src="images/photos/giant-american-millipede.jpg" data-cat="landscape" alt="giant american millipede macro"></img>
@@ -46,19 +47,19 @@
 			<img class="galleryimage" onload="fader(this)" src="images/photos/small-pickeral-frog-on-log.jpg" data-cat="beast" alt="small pickeral frog on a white log"></img>
 			<img class="galleryimage" onload="fader(this)" src="images/photos/greenhouse-light-dark.jpg" data-cat="landscape" alt="greenhouse beams, light and dark"></img>
 			<img class="galleryimage" onload="fader(this)" src="images/photos/dragonfly-on-juniper.jpg" data-cat="landscape" alt="dragonfly on juniper"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image2.jpg" data-cat="landscape"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image3.jpg" data-cat="landscape"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image4.jpg" data-cat="beast"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/frog-in-mud.jpg" data-cat="landscape" alt="frog in mud"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image6.jpg" data-cat="beast"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/engine-outside.jpg"data-cat="beast"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/moss-on-log.jpg" data-cat="beast" alt="moss on log"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image8.jpg" data-cat="landscape"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/mossy-wall.jpg" data-cat="landscape" alt="budding cacao tree"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/budding-cacao-tree.jpg" data-cat="landscape" alt="budding cacao tree"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/image10.jpg" data-cat="landscape"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/rowboat-on-calm-bass-lake.jpg" data-cat="landscape" alt="rowboat on calm bass lake"></img>
-			<img class="galleryimage" onload="fader(this)" src="images/photos/bass-lake-sunset.jpg" data-cat="landscape" alt="bass lake sunset"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image2.jpg" data-cat="landscape"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image3.jpg" data-cat="landscape"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image4.jpg" data-cat="beast"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/frog-in-mud.jpg" data-cat="landscape" alt="frog in mud"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image6.jpg" data-cat="beast"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/engine-outside.jpg"data-cat="beast"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/moss-on-log.jpg" data-cat="beast" alt="moss on log"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image8.jpg" data-cat="landscape"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/mossy-wall.jpg" data-cat="landscape" alt="budding cacao tree"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/budding-cacao-tree.jpg" data-cat="landscape" alt="budding cacao tree"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/image10.jpg" data-cat="landscape"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/rowboat-on-calm-bass-lake.jpg" data-cat="landscape" alt="rowboat on calm bass lake"></img>
+			<img class="galleryimage lazyload" onload="fader(this)" src="images/photos/bass-lake-sunset.jpg" data-cat="landscape" alt="bass lake sunset"></img>
 		</div>
 
 		<div id="myModal" class="modal">

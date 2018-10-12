@@ -5,11 +5,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #111;
+	width: 100%;
 }
 a {
 	color: inherit;
 	text-decoration: none;
 	font-size: 1.1em;
+	font-weight: 100;
 }
 img {
 }
@@ -222,7 +224,6 @@ p span {
 	margin-top: 50px;
 	margin-bottom: 20px;
 	text-align: center;
-	width: 100%
 }
 .imagecycler{
 	text-align: center;

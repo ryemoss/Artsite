@@ -60,7 +60,7 @@
 
 		<div class="icons">
 			<div class="socialicon"><a href="https://www.instagram.com/rye_moss/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-			<div class="socialicon"><a href="https://www.behance.net/ryemoss" target="_blank"><i class="fab fa-behance-square"></i></a></div>
+			<div class="socialicon"><a href="https://rye-moss.tumblr.com/" target="_blank"><i class="fab fa-tumblr-square"></i></a></div>
 			<div class="socialicon"><a href="https://theeldergoose.deviantart.com/gallery/" target="_blank"><i class="fab fa-deviantart"></i></a></div>
 			<div class="socialicon"><a href="mailto:images@ryemoss.com" target="_blank"><i class="far fa-envelope"></i></a></div>
 		</div>
@@ -84,7 +84,8 @@
 			}
 			var gall = [];
 			$('#gallery').find('img').each(function(){
-				gall.push($(this).attr('src'));
+				gall.push($(this).attr('data-src'));
+				console.log($(this).attr('data-src'));
 			})
 
 			var modal = document.getElementById('myModal');
